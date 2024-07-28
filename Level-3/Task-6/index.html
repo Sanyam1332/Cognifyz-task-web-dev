@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Level-3 Sign-up form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <div class="heading"><h1>Sign up form</h1></div>
+        <form action="" id="form">
+          <label for="fname">Full name:</label><br />
+          <input
+            type="text"
+            required
+            id="name"
+            placeholder="Enter your name"
+          /><br />
+          <div class="error" id="nameError"></div>
+
+          <label for="dob">Date of birth:</label><br />
+          <input type="date" id="dob" required /><br />
+          <div class="error" id="dobError"></div>
+
+          <label for="gender">Gender:</label><br />
+          <input type="radio" required id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input
+            type="radio"
+            required
+            id="female"
+            name="gender"
+            value="female"
+          />
+          <label for="female">Female</label>
+          <input type="radio" required id="other" name="gender" value="other" />
+          <label for="other">Other</label><br />
+          <div class="error" id="genderError"></div>
+
+          <label for="email">E-mail:</label><br />
+          <input type="text" id="email" required /><br />
+          <div class="error" id="emailError"></div>
+
+          <label for="address">Address:</label><br />
+          <textarea
+            required
+            id="address"
+            name="address"
+            rows="6"
+            cols="80"
+            placeholder="Enter your address"
+          ></textarea
+          ><br />
+          <div class="error" id="addressError"></div>
+
+          <label for="pincode">Pin Code:</label><br />
+          <input type="number" id="pincode" required name="pin" /><br />
+          <div class="error" id="pincodeError"></div>
+
+          <label for="contact">Contact No.:</label><br />
+          <input type="number" id="contact" required maxlength="10" /><br />
+          <div class="error" id="contactError"></div>
+
+          <label for="password">Password:</label><br />
+          <input type="password" id="password" required /><br />
+          <div class="error" id="passwordError"></div>
+
+          <label for="c_password">Confirm password:</label><br />
+          <input type="password" id="c_password" required /><br />
+          <div class="error" id="c_passwordError"></div>
+
+          <label for="graduation">Graduation:</label><br />
+          <select name="graduation" required>
+            <option value="">None</option>
+            <option value="">B.C.A</option>
+            <option value="">B.Tech</option>
+            <option value="">B.Sc</option>
+            <option value="">B.Com</option>
+            <option value="">B.B.A</option>
+            <option value="">M.B.A</option>
+            <option value="">M.C.A</option></select
+          ><br />
+          <div class="error" id="graduationError"></div>
+
+          <label for="interests">Interests:</label><br />
+          <input type="checkbox" name="web-development" /><label
+            for="web-development"
+            >Web development</label
+          ><br />
+          <input type="checkbox" name="AI" /><label for="AI">A.I</label><br />
+          <input type="checkbox" name="machine-learning" /><label
+            for="machine-learning"
+            >Machine learning</label
+          ><br />
+          <input type="checkbox" name="data-analyst" /><label for="data-analyst"
+            >Data analyst</label
+          ><br />
+          <input type="checkbox" name="cyber-security" /><label
+            for="cyber-security"
+            >Cyber security</label
+          ><br />
+
+          <button class="btn formSubmit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js "></script>
+  </body>
+</html>
